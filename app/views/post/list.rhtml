@@ -1,0 +1,34 @@
+
+<% form_tag :action => 'create' do %>
+  <%= render :partial => 'form' %>
+  <%= submit_tag "Create" %>
+  <p>
+  つぶやき実況:<span style="color: green"><%= flash[:postmsg] %></span>
+  </p>
+<% end %>
+
+<div id="post-list">
+<h1>つぶやき一覧</h1>
+
+<table cellpadding="5" cellspacing="0">
+  <% for post in @posts %>
+    <tr valign="top" class="<%= cycle('list-line-odd', 'list-line-even') %>">
+      <td width="60%">
+        <span class="post-content"><%= post.user  %>: <%= h(post.content) %> : <%= post.created %> </span><br/>
+      </td>
+
+    <td>
+      <%= link_to 'Show', :action => 'show', :id => post %>
+      <%= link_to 'Edit', :action => 'edit', :id => post %>
+     <%= link_to 'Destroy', { :action => 'destroy', :id => post }, :confirm => 'Are you sure?', :method => :post %>
+    </td>
+  </tr>
+<% end %>
+</table>
+</div>
+
+<%= link_to 'Previous page', { :page => @post_pages.current.previous } if @post_pages.current.previous %>
+<%= link_to 'Next page', { :page => @post_pages.current.next } if @post_pages.current.next %> 
+
+<br />
+

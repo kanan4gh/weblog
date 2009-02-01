@@ -1,0 +1,96 @@
+/* Global styles */
+
+/* START:notice */
+#notice {
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+/* END:notice */
+
+/* Styles for admin/list */
+
+#product-list .list-actions {
+  font-size:    x-small;
+  text-align:   right;
+  padding-left: 1em;
+}
+
+#post-list .list-line-even {
+  background:   #e0f8f8;
+}
+
+#post-list .list-line-odd {
+  background:   #f8b0f8;
+}
+
+#columns {
+  background-color: #9999ff;
+  width: 780px;
+}
+
+#banner {
+  width: 780px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #6666ff;
+  text-align: center;
+  background-color: #ff99cc;
+}
+
+#footer {
+  width: 770px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font: 15px/15px "Times New Roman", serif;
+  color: #6666ff;
+  text-align: left;
+  background-color: #ff99cc;
+  padding-left: 10px;
+  height: 27px;
+}
+
+#main {
+  margin-left: 15em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background-color: #ffccff;
+}
+
+#side {
+    float: left;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    width: 14em;
+    background-color: #ff99ff;
+    
+}
+
+.post-form fieldset {
+  background-color: #ffccff;
+}
+
+.post-form legend {
+
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+
+}
+
+.post-form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  margin-right: 0.5em;
+  display: block;
+}
+
+.post-form .submit {
+  margin-left: 5.5em;
+}
+
