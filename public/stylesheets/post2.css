@@ -1,0 +1,126 @@
+/* スタイルの初期化 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+{
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+/* end of スタイルの初期化 */
+/* body要素の初期化 */
+body {
+    /*    font: 62.5% "Century Gothic", Arial, "メイリオ", "MS Pゴシック", sans-serif;*/
+    background-color: #ccccff;
+    line-height: 1.5;
+    color: #393939;
+    text-align: center;
+}
+
+a:link {
+    color: #cd524f;
+}
+
+a:active {
+    color: #ffcc00;
+}
+
+a:visited {
+    color: #cd524f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+/* end of body要素の初期化 */
+
+div#wrapper {
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #cccccc;
+    width:760px;
+    background-color: #ffffff;
+}
+
+div#header {
+    margin: 0 auto;
+    border-bottom:1px, solid #cccccc;
+    width: inherit;
+    height: 80px;
+    text-align:left;
+}
+
+dev#contents {
+    margin: 0 auto;
+    text-align: center;
+    width: 740px
+}
+
+ul#menu {
+    margin: 5px 0 0 10px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    float: left;
+    width: 190px;
+    text-align: left;
+    letter-spacing: 0.1em;
+}
+
+div#mainContents {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    float: right;
+    width: 520px;
+    text-align: left;
+}
+
+div#current_post {
+    margin: 5px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+div#list_post {
+    margin: 5px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+
+div#status {
+    padding: 10px 0 0;
+    border-top: 1px solid #cccccc;
+    clear: both;
+}
+
+div#footer {
+    padding: 10px 0 0;
+    border-top: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
