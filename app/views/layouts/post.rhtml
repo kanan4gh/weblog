@@ -5,36 +5,38 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title>Whisperlet</title>
-    <%= stylesheet_link_tag 'scaffold', 'post' %>
+    <%= stylesheet_link_tag 'scaffold', 'post2' %>
   </head>
-  <body id="post">
-    <div id="banner">
-      <img src="/images/logo.png"/>
-      <%= @page_title || "Whisperlet" %>
-    </div>
-    <div id="columns">
-      <div id="side">
-        <p>
-          <%= link_to "つぶやき一覧",   :controller => 'post', :action => 'list' %>
-        </p>
-        <p>
-          <%= link_to "ユーザ一覧", :controller => 'login', :action => 'list_users' %>
-          <br/>
-          <%= link_to "ユーザ追加",   :controller => 'login', :action => 'add_user' %>
-          <br/>
-          <%= link_to "ユーザ設定", :controller => 'login', :action => 'edit_user' %>
-        </p>
-        <p>
-          <%= link_to "ログアウト",     :controller => 'login', :action => 'logout' %>
-        </p>
-      </div>
-      <div id="main">
-        <%= yield  %>
-      </div>
-    </div>
-    <div id="footer">
-        <span style="color: green"><%= flash[:notice] %></span>
-    </div>
+  <body>
+      <div id="wrapper">
+
+        <div id="header">
+          <img src="/images/logo.png"/>
+          <%= @page_title || "Whisperlet" %>
+        </div> <!-- end of header -->
+
+        <div id="contents">
+
+          <ul id="menu">
+            <li><%= link_to "つぶやき一覧",   :controller => 'post', :action => 'list' %></li>
+            <li><%= link_to "ユーザ一覧", :controller => 'login', :action => 'list_users' %></li>
+            <li><%= link_to "ユーザ追加",   :controller => 'login', :action => 'add_user' %></li>
+            <li><%= link_to "ユーザ設定", :controller => 'login', :action => 'edit_user' %></li>
+            <li><%= link_to "ログアウト",     :controller => 'login', :action => 'logout' %></li>
+          </ul> <!-- end of menu -->
+
+          <div id="mainContents">
+            <%= yield  %>
+          </div> <!-- end of contents -->
+
+          <div id="status">
+            <span style="color: green"><%= flash[:notice] %></span>
+          </div><!-- end of status -->
+          <div id="footer">
+            <address>Copyright &copy; 2009 Saver Inc. All Rights Reserved.</address>
+          </div> <!-- end of footer -->
+        </div> <!-- end of contents-->
+      </div> <!-- end of wrapper -->
   </body>
 </html>
 
